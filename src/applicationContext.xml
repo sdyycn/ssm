@@ -36,5 +36,9 @@
     </bean>
  
     <tx:annotation-driven transaction-manager="transactionManager"/>
+    
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.ttfy.mapper" />
+	</bean>
      
 </beans>
